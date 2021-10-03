@@ -3,12 +3,12 @@ import re
 import os
 import urllib.parse
 import urllib.request
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 from bs4 import BeautifulSoup
-import chromedriver_binary #google chromeを操作するために必要
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.select import Select
+import chromedriver_binary #google chromeを操作するために必要
 
 # 予約画面を Selenium で立ち上げ
 options = Options()
@@ -114,8 +114,8 @@ for i, selected_month in enumerate(select_list):
             ok_days.append(message)
 
 # .envファイルからLINE tokenを取得する
-dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
-load_dotenv(dotenv_path)
+#dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
+#load_dotenv(dotenv_path)
 LINE_TOKEN = os.environ.get("LINE_TOKEN")
 
 LINE_NOTIFY_URL = "https://notify-api.line.me/api/notify"
