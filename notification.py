@@ -3,7 +3,7 @@ import re
 import os
 import urllib.parse
 import urllib.request
-#from dotenv import load_dotenv
+#from dotenv import load_dotenv #herokuで動かすときは不要
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -114,9 +114,9 @@ for i, selected_month in enumerate(select_list):
             ok_days.append(message)
 
 # .envファイルからLINE tokenを取得する
-#dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
-#load_dotenv(dotenv_path)
-LINE_TOKEN = os.environ.get("LINE_TOKEN")
+#dotenv_path = os.path.join(os.path.dirname(__file__), '.env') #herokuで動かすときは不要
+#load_dotenv(dotenv_path) #herokuで動かすときは不要
+LINE_TOKEN = os.environ.get("LINE_TOKEN") #herokuで動かすときはherokuのConfig Varsに登録する
 
 LINE_NOTIFY_URL = "https://notify-api.line.me/api/notify"
 
