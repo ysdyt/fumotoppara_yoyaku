@@ -93,11 +93,11 @@ for i, selected_month in enumerate(select_list):
 
     # 土曜はデフォでサーチ対象する
     #find_weekofday = "土" のように指定する
-    find_weekofday =""
+    find_weekofday ="土"
 
     # 土曜以外のサーチ対象日リスト （行けそうな日があれば、こちらに追加してください！！！！）
     selected_days = [
-        "2021年10月7日"
+        "2021年10月9日"
     ]
 
     # NG日リスト
