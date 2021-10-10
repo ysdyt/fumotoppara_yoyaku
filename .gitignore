@@ -6,7 +6,6 @@ chromedriver
 .env
 old/
 
-
 # ----------------------------------------------------------------
 # 以下はGitHub公式テンプレート
 # https://github.com/github/gitignore/blob/master/Python.gitignore
